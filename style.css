@@ -1,0 +1,395 @@
+html { 
+  }
+body {
+    font-family: "Raleway";
+    font-size: 300;
+}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+   
+  nav {
+    margin: 50px;
+    
+  }
+
+
+h1,h2,h3{
+    font-family: "Bitter";
+    color: #f1f1f1;
+}
+h4, p {
+    font-family: "raleway";
+    color: #f1f1f1;
+}
+li a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Shadows Into Light Two";
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1rem;
+}
+h3 {
+    padding-bottom: 2rem;
+}
+p {
+    color: #f1f1f1;
+    font-size: 1.3rem;
+}
+
+.navtext {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+.movie-name {
+    padding-top: 0;
+}
+ul {
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+   
+  li {
+    height: 3rem;
+    margin-right: 0px;
+    padding: 0 20px;
+  }
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media screen and (max-width: 680px) {
+    h2 {
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 0.2rem;
+        padding-bottom: 0.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    .log-line {
+        font-size: 1.2rem;
+    }
+    p {
+        color: #f1f1f1;
+        font-size: 1.1rem;
+    }
+    
+    nav {
+        margin: 1.3rem 10px;
+    }
+    .navtext {
+        font-size: 1.3rem;
+    }
+    li {
+        height: 1.5rem;
+        margin-right: 0px;
+        padding: 0;
+    }
+    svg {
+        display: none;
+    }
+    .movie-name {
+        padding-top: 3rem;
+    }
+}
+@media screen and (min-width: 680px) {
+    i-frame {
+        width: 420px;
+    }
+}
+.movie-name {
+    text-align: center;
+    color: #f1f1f1;
+}
+.log-line {
+    color: #fff;
+    max-width: 40rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #f1f1f1;
+
+    margin: auto;
+}
+.text-center{
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.bg {
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: #D9D3CA;
+    z-index: -200;
+    width: 100%;
+    height: 100%;
+}
+.bg div {
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background: url(bgnostalgia.JPG) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: contrast(0.8);
+    mix-blend-mode: multiply;
+}
+  article {
+    transition: visibility 0.5s linear;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      border-radius: 5px;
+  }
+  #home {
+    max-width: 700px;
+  }
+  #trailer {
+      padding-top: 3rem;
+    max-width: 90%;
+  }
+  iframe {
+      margin: 0 auto;
+  }
+
+.tape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    padding-top: 1.8rem;
+    z-index: -1;
+}
+.tape img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.95)
+}
+@media screen and (max-width: 680px) {
+    .tape {
+        width: 100%;
+        height: 2.5rem;
+        padding-top: 0.8rem;
+    }
+}
+.open-trailer {
+    margin: 1rem auto;
+    padding: 0.75rem 1.5rem;
+    width: 6rem;
+    height: 3rem;
+    border: 3px solid #FFFF66;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.close-trailer {
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    width: 5rem;
+    height: 2.25rem;
+    border: 3px solid #FFFF66;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.trailer {
+    font-family: "Shadows Into Light Two";
+    font-size: 2rem;
+    text-align: center;
+}
+.close-trailer .trailer {
+    font-size: 1.5rem;
+}
+  li:last-child {
+    border-right: none;
+  }
+   
+  .navtext, li a {
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  li a {
+    color: #FFFFFF;
+    text-align: center;
+    width: 20%;
+}
+  li a:hover {
+    color: #FFFFCC;
+  }
+   
+  li.active a {
+    color: #FFFF66;
+  }
+
+
+.lightbox-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lightbox-gallery div > img {
+  max-width: 100%;
+  display: block;
+}
+
+.lightbox-gallery div {
+  margin: 10px;
+  flex-basis: 250px;
+}
+
+@media only screen and (max-width: 480px) {
+  .lightbox-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lightbox > div {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*Lighbox CSS*/
+
+
+.lightbox{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 20;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.lightbox img{
+    width: 80%;
+	display: block;
+  margin: auto;
+}
+
+.lightbox .caption{
+	margin: 15px auto;
+	width: 50%;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.5;
+	font-weight: 700;
+	color: #eee;
+}
+
+.svg {
+    position: absolute;
+}
+.svg-1 {
+    width: 35%;
+    height: 70%;
+    right: 10%;
+    bottom: 0;
+
+}
+.svg.svg-2 {
+    width: 20%;
+    height: 20%;
+    top: 20%;
+    left: 5%;
+    margin-right: 0px;
+}
+.svg-3 {
+    width: 40%;
+    height: 50%;
+    bottom: 0;
+    left: 5%;
+}
+.guitar-path {
+    stroke-dasharray: 100000;
+    stroke-dashoffset: 90000;
+    animation: dash 80s linear alternate forwards;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 100000;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+.dino-path {
+stroke-dasharray: 20000;
+stroke-dashoffset: 90000;
+animation: dash2 20s linear alternate forwards;
+}
+
+@keyframes dash2 {
+from {
+    stroke-dashoffset: 20000;
+}
+to {
+    stroke-dashoffset: 0;
+}
+}
+
+.car-path {
+    stroke-dasharray: 70000;
+    stroke-dashoffset: 700000;
+    animation: dash3 50s linear alternate forwards;
+    }
+    
+    @keyframes dash3 {
+    from {
+        stroke-dashoffset: 70000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+    }
