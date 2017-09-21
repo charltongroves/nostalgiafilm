@@ -16,26 +16,30 @@ body {
 
 
 h1,h2,h3{
-    font-family: "Bitter";
+    font-family: "Amatic SC";
     color: #f1f1f1;
 }
 h4, p {
-    font-family: "raleway";
+    font-family: "Fira Sans";
     color: #f1f1f1;
 }
 li a {
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-family: "Shadows Into Light Two";
+    font-family: "Amatic SC";
+    font-weight: 700;
+}
+.trailer {
+    font-family: "Amatic SC";
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     letter-spacing: 0.2rem;
     padding-bottom: 1rem;
 }
@@ -48,11 +52,11 @@ p {
 }
 
 .navtext {
-    font-weight: 400;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
 }
 .movie-name {
     padding-top: 0;
+    letter-spacing: 0.5rem;
 }
 ul {
     display: flex;
@@ -137,12 +141,12 @@ ul {
     text-align: center;
     padding-bottom: 2rem;
     color: #f1f1f1;
+    font-weight: 200;
 
     margin: auto;
 }
 .text-center{
 	text-align: center;
-	margin-bottom: 1em;
 }
 
 .bg {
@@ -215,8 +219,8 @@ ul {
 .open-trailer {
     margin: 1rem auto;
     padding: 0.75rem 1.5rem;
-    width: 6rem;
-    height: 3rem;
+    width: 6.5rem;
+    height: 3.25rem;
     border: 3px solid #FFFF66;
     letter-spacing: 4px;
     cursor: pointer;
@@ -225,18 +229,17 @@ ul {
     margin: 1rem auto;
     padding: 0.5rem 1rem;
     width: 5rem;
-    height: 2.25rem;
+    height: 2.5rem;
     border: 3px solid #FFFF66;
     letter-spacing: 4px;
     cursor: pointer;
 }
 .trailer {
-    font-family: "Shadows Into Light Two";
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 .close-trailer .trailer {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
   li:last-child {
     border-right: none;
@@ -333,14 +336,14 @@ ul {
 .svg-1 {
     width: 35%;
     height: 70%;
-    right: 10%;
-    bottom: 0;
+    right: 0%;
+    bottom: 10%;
 
 }
 .svg.svg-2 {
     width: 20%;
     height: 20%;
-    top: 20%;
+    top: 25%;
     left: 5%;
     margin-right: 0px;
 }
@@ -348,7 +351,7 @@ ul {
     width: 40%;
     height: 50%;
     bottom: 0;
-    left: 5%;
+    left: 18%;
 }
 .guitar-path {
     stroke-dasharray: 100000;
