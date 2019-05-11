@@ -34,7 +34,7 @@ function closeTrailer() {
     iframe.postMessage('{"event":"command","func":"' + "pauseVideo" + '","args":""}', '*');
 }
 
-$("a").click( function(e) {
+$(".page_tab").click( function(e) {
     e.preventDefault()
     setVisible($(this).attr("href"))
     $("li").removeClass("active")

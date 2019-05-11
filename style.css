@@ -14,14 +14,13 @@ body {
     
   }
 
-
 h1,h2,h3{
     font-family: "Amatic SC";
-    color: #f1f1f1;
+    color: #333;
 }
 h4, p {
     font-family: "Fira Sans";
-    color: #f1f1f1;
+    color: #333;
 }
 li a {
     text-transform: uppercase;
@@ -47,7 +46,7 @@ h3 {
     padding-bottom: 2rem;
 }
 p {
-    color: #f1f1f1;
+    color: #333;
     font-size: 1.3rem;
 }
 
@@ -85,6 +84,15 @@ ul {
 	width: 100%;
 	height: 100%;
 }
+
+#home {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 680px) {
     h2 {
         font-size: 2rem;
@@ -104,7 +112,7 @@ ul {
         font-size: 1.2rem;
     }
     p {
-        color: #f1f1f1;
+        color: #333;
         font-size: 1.1rem;
     }
     
@@ -133,14 +141,14 @@ ul {
 }
 .movie-name {
     text-align: center;
-    color: #f1f1f1;
+    color: #333;
 }
 .log-line {
     color: #fff;
     max-width: 40rem;
     text-align: center;
     padding-bottom: 2rem;
-    color: #f1f1f1;
+    color: #333;
     font-weight: 200;
 
     margin: auto;
@@ -184,9 +192,6 @@ ul {
       flex-direction: column;
       border-radius: 5px;
   }
-  #home {
-    max-width: 700px;
-  }
   #trailer {
       padding-top: 3rem;
     max-width: 90%;
@@ -216,13 +221,25 @@ ul {
         padding-top: 0.8rem;
     }
 }
+.trailer-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 1rem;
+  left: 0;
+}
+
+.kidOnCarScribble {
+  max-width: 90%;
+  width: 40rem;
+}
+
 .open-trailer {
     z-index: 100;
     margin: 1rem auto;
     padding: 0.75rem 1.5rem;
-    width: 6.5rem;
     height: 3.25rem;
-    border: 3px solid #FFFF66;
     letter-spacing: 4px;
     cursor: pointer;
 }
@@ -232,7 +249,7 @@ ul {
     padding: 0.5rem 1rem;
     width: 5rem;
     height: 2.5rem;
-    border: 3px solid #FFFF66;
+    border: 3px solid #333;
     letter-spacing: 4px;
     cursor: pointer;
 }
@@ -256,16 +273,16 @@ ul {
     transition: all 0.2s ease;
   }
   li a {
-    color: #FFFFFF;
+    color: #111;
     text-align: center;
     width: 20%;
 }
   li a:hover {
-    color: #FFFFCC;
+    color: #333;
   }
    
   li.active a {
-    color: #FFFF66;
+    color: #333;
   }
 
 
