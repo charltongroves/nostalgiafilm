@@ -217,6 +217,7 @@ ul {
     }
 }
 .open-trailer {
+    z-index: 100;
     margin: 1rem auto;
     padding: 0.75rem 1.5rem;
     width: 6.5rem;
@@ -225,6 +226,7 @@ ul {
     letter-spacing: 4px;
     cursor: pointer;
 }
+
 .close-trailer {
     margin: 1rem auto;
     padding: 0.5rem 1rem;
@@ -332,6 +334,7 @@ ul {
 
 .svg {
     position: absolute;
+    z-index: -10;
 }
 .svg-1 {
     width: 35%;
